@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="tags.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <section id="header">
+        <a href="#"><img src="https://www.cera-india.com/themes/cera/assets/images/cera-logo-desk.gif" class="logo" alt="Logo"></a>
+
+        <div >
+            <ul id="nav-list">
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Home page -->
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off! </p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Features -->
+    <section id="feature" class="section-p1">
+
+        <div class="fe-box">
+            <img src="data:image/png;base64,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">
+            <h6>Free Shipping</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi7GRTDoafKGw0zjQEvt80UKrG3ydeq_X15g&usqp=CAU ">
+            <h6>Online Order</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="data:image/jpeg;base64,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">
+            <h6>Save Money</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpcb-qw43CssUhO6rjYQO-zxquj70a3Kx3EQ&usqp=CAU">
+            <h6>Promotion</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="https://originhr.in/wp-content/uploads/2022/06/support-img.png">
+            <h6>F24/7 Suoport</h6>
+        </div>
+    </section>
+
+        <!-- Product -->
+
+    <section id="product-1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+
+        <div class="pro-container">
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹19</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹32</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹44</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹45.80</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹32.90</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹99</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹12.99</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹10</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Banner -->
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h1>Up to <span>70% Off</span> - All T-Shirts & Accessories</h1>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <!-- New Arrival -->
+
+    <section id="arrival" class="section-p1">
+        <h1>New Arrivals</h1>
+        <p>Summer Collection New Morden Design</p>
+
+        <div class="product-container">
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹7.50</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹7.90</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹12</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹8.89</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹6.34</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹2.10</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹4.01</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+
+            <div class="new-products products">
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/h/g/v/l-fo-shrt-499-cmnt-5th-anfold-original-imafkhgxzg9dfmwk-bb.jpeg?q=70">
+
+                <div class="detels">
+                    <span>adidas</span>
+                    <h5>Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹21</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart cart-1"></i></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SM Banner -->
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>carzy goals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dealsis on sale at cara</span>
+            <button class="white">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>spring/summer</h4>
+            <h2>upcomming season</h2>
+            <span>The best classic dealsis on sale at cara</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
+
+    <!-- Banner 2 -->
+
+    <section id="banner2">
+        <div class="banner-box">
+            <h2>Seaonal sale</h2>
+            <h3>Winter Collection-50% off</h3>
+        </div>
+        <div class="banner-box">
+            <h2>NEW FOOTWEAR COLLECTION</h2>
+            <h3>Winter Collection-50% off</h3>
+        </div>
+        <div class="banner-box">
+            <h2>T-SHIRT</h2>
+            <h3>New trandy t-shirt</h3>
+        </div>
+
+    </section>
+
+    <!-- New Letter -->
+
+    <section id="news-letter" class="section-p1 section-m1" >
+        <div class="news-text">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our letest shop and <span>spacial offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" name="email" required id="" placeholder="Your email address">
+            <button class="normal" type="submit">Sign Up</button>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="section-p1">
+        <div class="col-1 col">
+            <a href="#"><img src="https://www.cera-india.com/themes/cera/assets/images/cera-logo-desk.gif" class="logo" alt="Logo"></a> 
+            <h4>contact</h4>
+            <p><strong>Address:</strong> 563 William road north32,  East Central</p>
+            <p><strong>Phone:</strong> +91 6294718722</p>
+            <p><strong>Hours:</strong> 10:10-18:00. Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2 col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col-3 col">
+            <h4>My Account</h4>
+            <a href="#">Sign IN</a>
+            <a href="#"></a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col-4 col">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="down-store">
+                <div class="appStore-playstore">
+                    <img src="app_store-removebg-preview.png">
+                    <img src="playstor.png">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <div class="payment-img">
+                    <img src="visa.png">
+                    <img src="master-card.png">
+                    <img src="upi.png">
+                    <img src="mastero.jpg" >
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Ⓒ 2022 <a href="https://www.facebook.com/profile.php?id=100081039343550">Uttam Patra</a> Ecommerce Tepmlate</p>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/2abb031fe6.js" crossorigin="anonymous"></script>
+</body>
+</html>
